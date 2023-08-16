@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <!-- meta para palabras claves -->
+    <!-- script es un programa que es el cerebro para la pagina -->
+</head>
+<!--Comentar: Ctrl + K + C-->
+
+<body>
+    <!-- Sirve para un codigo más ordenado a la hora de aplicar el css-->
+    <div>
+        <!-- Para method existe el POST y GET. 
+        Por defecto es GET, pero hay que utilizar POST es más seguro-->
+        <!-- Hay diversos valores que le podemos dar a los type de los inputs-->
+        <form action="" method="" target="_blank">
+            <label for="txname"> Nombre y apellido</label>
+            <input type="text" id="txname" name="nmtxname" value="Pepovich">
+            <br>
+            <label for="txname"> Segundo nombre</label>
+            <input type="text" id="txname2" name="nmtxname2" value="Juani3pe">
+            <br>
+            <br>
+            <select>
+                <option value="1"></option>
+                <option value="2">Option 1</option>
+                <option value="3">Option 2</option>
+                <option value="4">Option 3</option>
+            </select>
+            <br>
+            <br>
+            <label for="txtPatente"> Patente: </label>
+            <input type="text" id="txtPatente" required maxlength="7" minlength="6">
+            <br>
+            <label for="NmKilometraje">Kilometraje:</label>
+            <input type="numer" min="0" id="NmKilometraje">
+            <br>
+            <input type="submit">
+            <input type="button" value="Boton">
+        </form>
+    </div>
+
+    <div>
+        <br>
+        <select name="comboBox" id="">
+            <option value="1">CABA</option>
+            <option value="2" selected>Rosario</option>
+            <option value="3">Tucuman</option>
+        </select>
+    </div>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.590476785844!2d-60.63088182514432!3d-32.961819972653664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7aa554da673bb%3A0xb95b3f5c4931696!2sPasco%20144%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1692222912789!5m2!1ses-419!2sar"
+        width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    
+    <iframe id="inlineFrameExample" title="Inline Frame Example" width="200" height="100"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+    </iframe>
+</body>
+
+</html>
