@@ -1,0 +1,51 @@
+* {
+    font-family: sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+
+h1 {
+    font-size: 24px;
+    color: #242424;
+    font-weight: 900; 
+}
+
+h2 {
+    font-size: 20px;
+    color: #606060;
+    font-weight: 800;
+}
+
+p {
+    font-size: 14px;
+}
+
+ul {
+    font-family: monospace;
+    font-size: 18px;
+    margin-left: 100px;
+    padding: 20px;
+    border: 2px solid blue;
+    width: 40%;
+    list-style: none;
+}
+
+a {
+    font-weight: bold;
+}
+
+ul a {
+    color: orange;
+    text-decoration: underline;
+}
+
+.NeuRio {
+    color: green;
+}
+
+li{
+    margin: 10px;
+}
+
+ul > li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
