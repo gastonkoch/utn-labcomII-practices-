@@ -1,0 +1,85 @@
+/* ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2px;
+    padding: 0;
+}
+
+ul > li {
+    background-color: rgba(123,198,199,0.8);
+    flex-grow: 1;
+    width: max-content;
+    width: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+ul a, ul a:link {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    display: block;
+} */
+
+/* .cuadro {
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    padding: 0;
+    background: rgba(193,219,210,1.00);
+    list-style: none;
+    font-family: sans-serif;
+} */
+
+/* .main {
+    display: flex;
+    gap: 2px;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.main .sidebar,
+.main .contenido {
+    height: 100vh;
+    padding: 12px 24px;
+}
+
+.main .sidebar {
+    background: rgb(133, 215, 239);
+    flex: 1;
+}
+
+.main .contenido {
+    background: rgb(193, 219, 210);
+    flex:8;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    justify-content: space-between;
+    gap: 2px;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    border-bottom: 1px solid blue;
+}
+
+ul a,
+ul a:link {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+    display: block;
+    width: 100%;
+} */
