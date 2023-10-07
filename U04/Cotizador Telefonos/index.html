@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador telefonos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="product-image"><img src="img/gold.jpg" id="image_element" alt=""></div>
+        <div class="product-details">
+            <div class="product-details-content">
+                <h2>Celulares</h2>
+                <form action="">
+                    <div class="form-control">
+                        <label>Color</label>
+                        <select onchange="changeProductImage()"  id="color">
+                            <option disabled selected value="0"> -- Seleccione una opción -- </option>
+                            <option value="grafito">Grafito</option>
+                            <option value="sierra">Sierra</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold">Gold</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <label>Capacidad</label>
+                        <select id="capacidad">
+                            <option disabled selected value="0"> -- Seleccione una
+                                opción -- </option>
+                            <option value="1">128 GB</option>
+                            <option value="2">256 GB</option>
+                            <option value="3"> 512 GB</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <label>Cantidad</label>
+                        <input type="text" id="cantidad"/>
+                    </div>
+                    <div class="form-control">
+                        <button type="button" onclick="calculatePrice()">Cotizar</button>
+                    </div>
+                    <div id="result" class="form-control">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

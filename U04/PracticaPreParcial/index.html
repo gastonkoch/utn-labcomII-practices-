@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Pre Parcial</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#">
+        <label for="pesosArgentinos">Pesos argetinos</label>
+        <input type="number" id="pesosArgentinos" name="pesosArgentinos" placeholder="0">
+        <br>
+        <br>
+        <label for="monedaExtranjera">Moneja extranjera</label>
+        <select name="" id="monedaExtranjera" name="monedaExtranjera">
+            <option disabled selected value="0"> -- Seleccione una opción -- </option>
+            <option value="1">Dólares</option>
+            <option value="2">Euros</option>
+        </select>
+        <br>
+        <br>
+        <button onclick="calcular()">Calcular</button>
+    </form>
+    <div id="resultado"></div>
+    <br>
+    <button><a href="nuevamoneda.html">Agregar nueva moneda</a></button>
+</body>
+</html>
