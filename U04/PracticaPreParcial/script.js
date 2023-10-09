@@ -1,10 +1,8 @@
-// let moneda = document.getElementById('monedaExtranjera')
-
 function calcular(){
     let pesosArgentinos = document.getElementById('pesosArgentinos').value
     let monedaExtranjera = document.getElementById('monedaExtranjera').value
     let valido = true;
-    // const cotizaciones = [900,1000];
+
     const dolar = 900;
     const euro = 1000;
 
@@ -29,24 +27,23 @@ function calcular(){
                 break;
         }
         
-        // console.log(euro)
-        
         document.getElementById('resultado').innerHTML = "Cotizacion: " + resultado
     }
 }
 
 function agregar() {
-    let nuevaMoneda = document.getElementById('nuevaMoneda').value;
-    let cotizacionMoneda = parseFloat(document.getElementById('cotizacionMoneda').value);
-    let valido = true;
-    if (nuevaMoneda === ""){
-        alert("Debe ingresar el nombre de la nueva moneda")
-        console.log(nuevaMoneda)
-        valido = false
-    }
-    
-    if (isNaN(cotizacionMoneda)){
-        alert("Debe ingresar la cotizacion")
-        valido = false
+    let divisa_nombre = document.getElementById('nuevaMoneda').value;
+    let valor_divisa = document.getElementById('cotizacionMoneda').value;
+
+    if ((divisa_nombre == '') || valor_divisa == 0) {
+        alert("Por favor, complete todos los campos para realizar el alta de la moneda");
+    } else if (valor_divisa < 1) {
+        alert("Por favor, ingrese una cotización de pesos válida para realizar el calculo");
+    } else {
+        let select = document.getElementById("monedaExtranjera");
+        let option = document.createElement("option");
+        option.value = valor_divisa;
+        option.text = divisa_nombre;
+        select.appendChild(option);
     }
 }

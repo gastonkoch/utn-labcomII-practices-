@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Costo de Energia EPE</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="usuario">
+        <h1>Calculadora de Costo de Energia EPE</h1>
+        <h3>Tipo de usuario</h3>
+        <label for="residencial">Residencial</label>
+        <input type="radio" id="residencial" class="residencial">
+        <label for="industrial">Industrial</label>
+        <input type="radio" id="industrial" class="industrial">
+    </div>
+    <br><br>
+    <div class="zona-domicilio">
+        <h3>Zona del domicilio</h3>
+        <select name="distrito" id="distrito">
+            <option value="0" disabled selected>Selecciona tu distrito</option>
+            <option value="centro">Distrito Centro</option>
+            <option value="sur">Distrito Sur</option>
+            <option value="oeste">Distrito Oeste</option>
+            <option value="norte">Distrito Norte</option>
+        </select>
+    </div>
+    <br><br>
+    <div class="kwh">
+        <h3>Cantidad de kWh del mes</h3>
+        <input type="number" id="kwh" placeholder="0">
+    </div>
+    <br><br>
+    <button onclick="calcular()">Calcular</button>
+    <p id="costo"></p>
+</body>
+</html>
